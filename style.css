@@ -24,8 +24,10 @@ button {
     color: white;
     font-size: 18px;
     border: none;
-    border-radius: 6px;
+    border-radius: 16px;
     margin: 8px;
+    width: 86px;
+    height: 36px;
 }
 
 .container {
@@ -35,7 +37,7 @@ button {
 }
 
 .container div {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .sidebar {
@@ -77,10 +79,34 @@ button {
 
 .header .top-row, .bottom-row {
     display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 12px;
 }
 
 .header .top-row input {
     flex: 1;
+    height: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--light-bg-color)
+}
+
+.header .bottom-row .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.greeting p, h3{
+    margin: 0;
+}
+
+.avatar-placeholder {
+    border-radius: 16px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--light-bg-color)
 }
 
 .header .bottom-row .user-info {
