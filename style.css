@@ -21,6 +21,11 @@ a {
     margin-bottom: 8px;
 }
 
+hr {
+    color: rgb(212, 212, 212);
+    margin: 12;
+}
+
 button {
     background-color: var(--main-bg-color);
     color: white;
@@ -129,7 +134,7 @@ button {
     border-radius: 16px;
     height: 32px;
     width: 32px;
-    background-color: var(--light-bg-color)
+    background-color: var(--accent-color)
 }
 
 .header .bottom-row .user-info {
@@ -162,15 +167,27 @@ button {
 
 .card {
     background-color: white;
-    padding: 18px;
-    border-radius: 6px;
+    border-radius: 0px 6px 6px 0px;
     box-shadow: var(--content-shadow);
-    /* box-shadow: -6px 0px var(--accent-color); */
+}
+
+.card-accent-color {
+    box-shadow: -6px 0px var(--accent-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 6px 0 0 6px;
+}
+
+.card-accent-color>* {
+    margin: 12px;
 }
 
 .card-title {
     font-weight: bold;
     font-size: 1rem;
+    margin-bottom: 12px;
 }
 
 .card-content {
@@ -191,6 +208,7 @@ button {
     box-shadow: var(--content-shadow);
     margin-right: 12px;
     background-color: white;
+    padding: 12px;
 }
 
 .anouncement-item {
@@ -205,6 +223,7 @@ button {
 
 .trending {
     padding: 12px;
+    align-self: end;
 }
 
 .trending-wrapper{
@@ -219,6 +238,7 @@ button {
     align-items: center;
     gap: 8px;
     border-radius: 6px;
+    margin-bottom: 16px;
 }
 
 .trending-item .avatar-placeholder {
