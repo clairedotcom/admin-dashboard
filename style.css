@@ -79,7 +79,28 @@ button {
     display: grid;
 }
 
-.header .top-row, .bottom-row {
+.header .top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px;
+}
+
+.header-top-left, .header-top-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-top-right {
+    justify-content: flex-end;
+}
+
+.header-icon {
+    width: 24px;
+    height: auto;
+}
+
+.header .bottom-row {
     display: flex;
     align-items: center;
     gap: 8px;
