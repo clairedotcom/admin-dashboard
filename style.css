@@ -23,7 +23,7 @@ a {
 
 hr {
     color: rgb(212, 212, 212);
-    margin: 12;
+    margin: 8px;
 }
 
 button {
@@ -39,7 +39,7 @@ button {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -55,7 +55,7 @@ button {
     font-size: 32px;
     color: white;
     font-weight: 700;
-    margin-left: 8px;
+    margin-right: 16px;
 }
 
 .sidebar img {
@@ -158,7 +158,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 12px;
+    gap: 24px;
 }
 
 .card {
@@ -231,6 +231,7 @@ button {
 
 .trending-item .avatar-placeholder {
     margin-left: 8px;
+    flex-shrink: 0;
 }
 
 .trending-item .username {
